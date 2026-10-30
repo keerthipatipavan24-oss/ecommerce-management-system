@@ -160,7 +160,7 @@ export default function Home() {
       </section>
 
       {/* Section 3: Featured Products */}
-      <section className="mx-auto max-w-7xl px-6 py-12">
+      <section className="max-w-7xl px-6 py-12">
         <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
           <div>
             <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
