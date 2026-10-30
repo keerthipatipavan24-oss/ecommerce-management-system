@@ -64,6 +64,13 @@ export default function Home() {
     [1, 7, 13, 19].includes(product.id),
   );
 
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  }, []);
+
   return (
     <div className="bg-gray-50">
       {/* Section 1: Hero Banner */}

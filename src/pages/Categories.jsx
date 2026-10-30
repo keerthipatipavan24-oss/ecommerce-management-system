@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { getSavedProducts } from "../data/productStorage";
 import { Link } from "react-router-dom";
 
@@ -27,6 +27,13 @@ export default function Categories() {
       description: "Complete your look with everyday essentials.",
     },
   ];
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    });
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50 px-4 py-10 sm:px-6">
